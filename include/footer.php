@@ -2,7 +2,7 @@
    <footer class="section-sm pb-1 border-top border-default">
       <div class="container">
          <div class="text-center">
-            <p class="content">&copy; EARTH UST 2022</p>
+            <p class="content">&copy; EARTH-UST 2022</p>
          </div>
       </div>
    </footer>

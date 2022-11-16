@@ -20,7 +20,7 @@
 	    <div class="page-heading">
 			<h2>DASHBOARD</h2> 
 			<hr>
-	        <h3><?php echo date('F ,d Y');?></h3>
+	        <h3><?php echo date('F d, Y');?></h3>
 	    </div>
 	    <div class="page-content">
 	        <section class="row">

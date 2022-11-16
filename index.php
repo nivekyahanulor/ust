@@ -11,7 +11,6 @@
 	   </div>
 	   <div class="widget justify-content-center">
 	    <center>
-	      <img class="img-fluid" width="80px" src="assets/images/ust.png" >
 		  <img class="img-fluid" width="100px" src="assets/images/earth.png">
 		</center>
 		<br><br><br>
@@ -21,7 +20,9 @@
 		 
 		  <h3 class="text-center"> Welcome to EARTH-UST! <br> The Premier Environmental
 		  university-wide organization of the University of Santo Tomas
-		  </h3>
+		  <br><br>
+		  </h3> 
+		
 	   </div>
 	</aside>
 	<div class="col-lg-7  mb-5 mb-lg-1">

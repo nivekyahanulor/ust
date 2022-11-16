@@ -41,12 +41,13 @@
                         <div class="form-group mb-2">
                             <select class="form-control form-control-md" name="role" required>
 								<option value=""> - Select User Type - </option>
-								<option> Thomasian Community </option>
+								<option> Undergraduate </option>
 								<option> Executive Associates </option>
-								<option> Students </option>
+								<option> Graduate School </option>
 								<option> Members </option>
 								<option> Academic Staff </option>
 								<option> Non-Academic Staff </option>
+								<option> Alumni </option>
 							</select>
 					    </div>
 						<div class="form-group mb-2">

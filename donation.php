@@ -71,11 +71,9 @@
  <section>
   <div class="container">
   <div class="widget justify-content-center">
-	      <img class="img-fluid" width="80px" src="assets/images/ust.png" >
 		  <img class="img-fluid" width="100px" src="assets/images/earth.png">
 		  <h1 class="form-signin-heading">DONATION</h1>
-		 
-		  </h3>
+		  <h4>Here are some stores and shops where you can donate your recycled materials and buy your essential needs that are eco-friendly. Note that EARTH-UST does not accept any monetary donations and other forms of donations.</h4>
 	   </div>
         <div class="row">
 		<?php while ($val = $donation->fetch_object()) { ?>

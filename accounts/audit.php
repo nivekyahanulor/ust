@@ -52,7 +52,7 @@
 							<div class="card">
 							
 								<div class="card-body">
-										<table class="table table-striped" id="table1">
+										<table class="table table-striped" id="table_id">
 											<thead>
 												<tr>
 													<th class="text-center">Name</th>

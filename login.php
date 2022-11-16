@@ -57,7 +57,9 @@
                             </label>
                         </div>
                         <button style="background-color: #cca934; border: none" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">LOGIN</button>
-                    </form>
+						<br><br>
+						<center> Not yet register?  Register  <a href="register.php"> here </a> </center>
+				   </form>
 
                 </div>
             </div>

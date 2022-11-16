@@ -130,7 +130,7 @@
 					<li class="col-sm-12">
 						<ul>
 							<li><a href="events.php">EVENTS</a></li>
-							<li><a href="recruitement.php">RECRUITEMENT</a></li>
+							<li><a href="recruitement.php">RECRUITMENT</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -146,13 +146,7 @@
                <li class="nav-item">
                   <a href="login.php" class="btn btn-md btn-info">LOGIN</a>
                </li> 
-			   <li class="nav-item">
-                &nbsp;
-               </li> 
-			   <li class="nav-item">
-                   <a href="register.php"class="btn btn-md btn-success">REGISTER</a>
-               </li>
-			  
+			 
             </ul>
          </div>
       </nav>

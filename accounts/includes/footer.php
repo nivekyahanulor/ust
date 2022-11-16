@@ -27,9 +27,22 @@
                 pageLength: 25
             }); 
 			
+			
+			
 		
      });	
+	$(document).ready(function() {
+            $('#table_id').DataTable({
 
+                dom: 'Bfrtip',
+                pageLength: 25,
+
+                buttons: [
+                   'csv', 'excel', 'pdf', 'print'
+                ]
+
+            });
+        });
 	 function printDiv() {
             var divContents = document.getElementById("resourcestep2").innerHTML;
             var a = window.open('', '_blank');

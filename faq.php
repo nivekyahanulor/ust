@@ -59,7 +59,7 @@
 			<div class="container">
 			<center>
 
-			<h1 class="form-signin-heading">FAQ</h1>
+			<h1 class="form-signin-heading">Frequently Asked Questions</h1>
 						
 			
 			<div class="container demo">

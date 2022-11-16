@@ -63,32 +63,35 @@
 			<div class="col-12">
 			<div style="height:10px;"></div>
 			<div class="container">
-			<img class="img-fluid" width="80px" src="assets/images/ust.png" >
 			<img class="img-fluid" width="100px" src="assets/images/earth.png">
 			<h1 class="form-signin-heading">CONTACT US</h1>
 			<div style="height:10px;"></div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" >
 					<div class="box">
-						<div class="box-icon">
+					<a href="https://www.facebook.com/EARTHUST" target="_blank">
+						<div class="box-icon" style="background-color:#1877f2 !important;">
 							<span class="fa fa-4x fa-facebook"></span>
 						</div>
 						<div class="info">
 							<br>
 							<h5 class="text-center">EARTH-UST @earthust</h5>
 						</div>
+					</a>
 					</div>
 				</div>
 				
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="box">
-						<div class="box-icon">
+					<a href="https://twitter.com/earthust" target="_blank">
+						<div class="box-icon" style="background-color:#55acef !important;">
 							<span class="fa fa-4x fa-twitter"></span>
 						</div>
 						<div class="info">
 							<br>
 							<h5 class="text-center">@earthust</h5>
 						</div>
+					</a>
 					</div>
 				</div> 
 				</div> 
@@ -96,24 +99,29 @@
 				<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="box">
-						<div class="box-icon">
+					<a href="https://www.instagram.com/earthust/" target="_blank">
+						<div class="box-icon" style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%) !important;">
 							<span class="fa fa-4x fa-instagram"></span>
 						</div>
 						<div class="info">
 							<br>
 							<h5 class="text-center">@earthust</h5>
 						</div>
+					</a>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="box">
-						<div class="box-icon">
+					<a href="mailto:earth.uso@ust.edu.ph" target="_blank">
+						<div class="box-icon" style="background-color:#BB001B !important;">
 							<span class="fa fa-4x fa-google"></span>
 						</div>
 						<div class="info">
 							<br>
 							<h5 class="text-center">earth.uso@ust.edu.ph</h5>
 						</div>
+						
+					</a>
 					</div>
 				</div>
 			</div>

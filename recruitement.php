@@ -11,7 +11,6 @@
 	   </div>
 	   <div class="widget justify-content-center">
 	    
-	      <img class="img-fluid" width="80px" src="assets/images/ust.png" >
 		  <img class="img-fluid" width="100px" src="assets/images/earth.png">
 		 <br><br><br>
 		 <center>
@@ -21,7 +20,7 @@
 		  <h3 class="text-center"> Want to join the organization and participate within 
 		  nature related programs? 
 		  <br><br>
-		  We are Recruiting !! 
+		  We are recruiting!!! 
 		  <br><br>
 		  <a href="https://www.facebook.com/photo?fbid=421974423397528&set=a.419009860360651" target="_blank" class="btn btn-successs btn-lg"> JOIN NOW </a>
 		  </h3>
