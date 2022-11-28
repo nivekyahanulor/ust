@@ -4,15 +4,10 @@ session_start();
 include('../controller/database.php');
 
 error_reporting(0);
-<<<<<<< HEAD
+
 $ids        = $_SESSION["id"];
 $tickets = $mysqli->query("SELECT * from tickets where user_id = '$ids'");
-=======
 
-
-$ids        = $_SESSION["id"];
-$tickets = $mysqli->query("SELECT * from tickets where user_id='$id'");
->>>>>>> f11dd62caa12fa58011df796fef6193600a9a753
 
 
 if(isset($_POST['add-ticket'])){
