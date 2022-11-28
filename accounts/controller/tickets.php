@@ -5,7 +5,9 @@ include('../controller/database.php');
 
 error_reporting(0);
 
-$tickets = $mysqli->query("SELECT * from tickets");
+
+$ids        = $_SESSION["id"];
+$tickets = $mysqli->query("SELECT * from tickets where user_id='$id'");
 
 
 if(isset($_POST['add-ticket'])){
