@@ -8,7 +8,7 @@
 	$password = mysqli_real_escape_string($mysqli,($_POST['password']));
 
 	$sql      = "SELECT * FROM user_account WHERE username='$username' AND BINARY password='$password' ";
-
+	$result   = mysqli_query($mysqli, $sql);
 
 	$row      = mysqli_fetch_assoc($result);
 	$rows	  = mysqli_num_rows($result);
