@@ -18,7 +18,7 @@ if(isset($_POST['add-members'])){
 	$contactnumber = $_POST['contactnumber'];
 	$email         = $_POST['email'];
 	$username      = $_POST['username'];
-	$password      = $_POST['password'];
+	$password      = md5($_POST['password']);
 	$address       = $_POST['address'];
 	$username1     = $_SESSION['name'];
 	$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
