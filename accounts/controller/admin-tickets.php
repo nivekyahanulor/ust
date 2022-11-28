@@ -11,7 +11,14 @@ if($_GET['status'] == 'New'){
 	$atickets = $mysqli->query("SELECT * from tickets where status = 2");
 }
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
+require 'phpmailer/vendor/phpmailer/phpmailer/src/Exception.php';
+require 'phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'phpmailer/vendor/phpmailer/phpmailer/src/SMTP.php';
+	
+	
 if(isset($_POST['approve-ticket'])){
 	
 	$id       = $_POST['id'];
@@ -37,11 +44,42 @@ if(isset($_POST['approve-ticket'])){
 
 if(isset($_POST['solved-ticket'])){
 	
-	$id       = $_POST['id'];
+	$id        = $_POST['id'];
+	$name      = $_POST['user'];
+	$user_id   = $_POST['user_id'];
+	$email     = $_POST['email'];
 	$username = $_SESSION['name'];
 
 	$mysqli->query("UPDATE tickets set status = 2 WHERE ticket_id ='$id'");
-	$mysqli->query("INSERT INTO history (user_name, status, code	) VALUES ('$username','Set Ticket to Solved',1) ");
+	$mysqli->query("INSERT INTO history (user_name, status, code) VALUES ('$username','Set Ticket to Solved',1) ");
+	
+			$mail = new PHPMailer();
+			$mail->isSMTP();
+			$mail->Host     = 'smtp.hostinger.com';
+			$mail->SMTPAuth = true;
+			$mail->Username = 'admin@earthust.com';
+			$mail->Password = '@Adminust2022';
+			$mail->SMTPSecure = 'ssl'; // tls
+			$mail->Port     = 465; // 587
+			$mail->setFrom('admin@earthust.com', 'EARTH-UST');
+			$mail->addAddress($email);
+			$mail->Subject = 'Survey Form';
+			$mail->isHTML(true);
+
+
+			$mail->Body = "<html>
+								<body>
+									<h1>Hello , " .$name ." </h1>
+									<p> Kindly take survey for system improvements.  </p>
+									<p> <a href='http://earthust.com/survey.php?name=$name&id=$user_id'> Link Here </a> </p>
+								</body>
+							</html>";
+
+			if ($mail->send()) {
+				$message = 'success';
+			} else {
+				$message = 'failed';
+			}
 	
 	echo '  <script>
 					Swal.fire({
@@ -50,7 +88,7 @@ if(isset($_POST['solved-ticket'])){
 							icon: "success",
 							type: "success"
 							}).then(function(){
-								window.location = "ticket-view.php?id='.$id.'";
+								window.location = "ticket-view.php?id='.$message.'";
 							});
 			</script>';
 	

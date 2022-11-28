@@ -28,6 +28,10 @@
                         <div class="alert alert-warning alert-dismissable">
                             <center><strong>Login Error!</strong> Please Try Again!</center>
                         </div>
+                    <?php } if (isset($_GET['duplicate'])) { ?>
+                        <div class="alert alert-warning alert-dismissable">
+                            <center><strong>Register Error!</strong> Email already exist!</center>
+                        </div>
                     <?php } ?>
                     <h1 class="auth-title">Register.</h1>
                     <p class="auth-subtitle mb-5">Register your account.</p>
@@ -57,9 +61,13 @@
                             <input type="text" class="form-control form-control-md" name="username" placeholder="User Name" autocomplete="off" required>
                         </div>
                        <div class="form-group mb-2">
-                            <input type="password" class="form-control form-control-md" name="password" placeholder="Password" autocomplete="off" required>
+                            <input type="password" class="form-control form-control-md" name="password" placeholder="Password" id="txtPassword"  autocomplete="off" required>
+                        </div> 
+						<div class="form-group mb-2">
+                            <input type="password" class="form-control form-control-md" name="password" placeholder="Confirm Password" id="txtConfirmPassword"  autocomplete="off" required>
                         </div>
-                        <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">REGISTER</button>
+						<div id="error-password" style="display:none;"> <center> <b><font color="red"> Password not match!</font></b> </center> </div>
+                        <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5" onclick="return Validate()" id="register">REGISTER</button>
                     </form>
 
                 </div>
@@ -75,5 +83,17 @@
 
     </div>
 </body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+  function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            $("#error-password").show();
+            return false;
+        }
+        return true;
+    }
+</script>
 
 </html>

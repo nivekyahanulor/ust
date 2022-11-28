@@ -32,7 +32,7 @@
 					
 					<?php if (isset($_GET['success'])) { ?>
                         <div class="alert alert-success alert-dismissable">
-                            <center><strong>Success</strong> Login now using your account!</center>
+                            <center><strong>Success!</strong> Please verify your account to your email!</center>
                         </div>
                     <?php } ?>
                     <h1 class="auth-title">Log in.</h1>

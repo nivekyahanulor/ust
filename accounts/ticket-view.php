@@ -50,7 +50,7 @@
 								<div class="card-header">
 									<?php
 										$id      = $_GET['id'];
-										$tickets = $mysqli->query("SELECT * from tickets where ticket_id  = '$id'");
+										$tickets = $mysqli->query("SELECT a.* ,b.* from tickets a  left join users b on b.user_id = a.user_id where a.ticket_id  = '$id'");
 										$row       = $tickets->fetch_assoc();
 										$date=date_create($row['date_added']);
 										echo date_format($date,"D , d F Y , H:m A");
@@ -76,6 +76,7 @@
 										Response : <br>
 										<textarea class="form-control" name="content"> </textarea>
 										<input type="hidden" value="<?php echo $id;?>" name="id">
+										
 										<input type="hidden" value="<?php echo $_SESSION['name'];?>" name="responseby">
 										<br>
 										<?php if($row['status'] == 2){ echo "<button class='btn btn-success btn-sm'>Solved Ticket</button>"; } else { ?>
@@ -106,6 +107,9 @@
 																<form action="#" enctype="multipart/form-data" method="POST">
 																	<div class="modal-body">
 																		<div class="form-group">
+																		    <input type="hidden" value="<?php echo $row['fname'] . ' '. $row['lname'];?>" name="user">
+																		    <input type="hidden" value="<?php echo $row['user_id'];?>" name="user_id">
+																		    <input type="hidden" value="<?php echo $row['email'];?>" name="email">
 																			<input type="hidden" name="id" class="form-control" value="<?php echo $row['ticket_id']; ?>">
 																		</div>
 																		ARE YOU SURE TO MARK AS SOLVED THIS TICKET?

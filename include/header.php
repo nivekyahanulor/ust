@@ -26,6 +26,7 @@
    <link rel="shortcut icon" href="assets/images/earth.png" type="image/x-icon">
    <link rel="icon" href="assets/images/earth.png" type="image/x-icon">
    <style>
+   
    .dropdown-large {
   position: static !important;
 }
@@ -93,7 +94,13 @@
 </head>
 
 <body>
+<?php
+ $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+ $uri_segments = explode('/', $uri_path);
+ $page =  $uri_segments[2];
+?>
 <!-- navigation -->
+<?php if($page == 'survey.php' || $page == 'confirm.php'){}else{?>
 <header class="sticky-top bg-green border-bottom border-default" >
    <div class="container">
 
@@ -151,4 +158,5 @@
          </div>
       </nav>
    </div>
+<?php } ?>
 </header>

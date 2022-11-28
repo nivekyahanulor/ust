@@ -28,7 +28,7 @@
                         $accounts = 'active';
                     }else if ($page == 'announcement.php' || $page == 'faq.php' || $page == 'donation.php' ) {
                         $announcement = 'active';
-                    }else if ($page == 'audit.php' || $page == 'reports.php' ) {
+                    }else if ($page == 'audit.php' || $page == 'reports.php'  || $page == 'surveys.php' ) {
                         $reports = 'active';
                     }
                     ?>
@@ -104,6 +104,9 @@
                                     </li>
                                     <li class="submenu-item ">
                                         <a href="audit.php"> Audit Trail</a>
+                                    </li> 
+									<li class="submenu-item ">
+                                        <a href="surveys.php"> Surveys</a>
                                     </li>
 									
                                 </ul>
