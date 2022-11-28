@@ -5,9 +5,13 @@
 	include('database.php');
 
 	$username = mysqli_real_escape_string($mysqli,$_POST['username']);
-	$password = mysqli_real_escape_string($mysqli,md5($_POST['password']));
+	$password = mysqli_real_escape_string($mysqli,($_POST['password']));
 
+<<<<<<< HEAD
 	$sql      = "SELECT * FROM user_account WHERE username='$username' AND BINARY password='$password' ";
+=======
+	$sql      = "SELECT * FROM user_account WHERE username='$username' AND  password='$password' ";
+>>>>>>> f11dd62caa12fa58011df796fef6193600a9a753
 	$result   = mysqli_query($mysqli, $sql);
 
 	$row      = mysqli_fetch_assoc($result);
